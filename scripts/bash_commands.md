@@ -1,0 +1,1 @@
+run analysis: `python3 chess-artist/chess_artist.py  --outfile analysed_positions.csv --enginefile ./stockfish_14.1_linux_x64_popcnt --engineoptions "Hash value 1024, Threads value 6" --eval search --job analyze --depth 20 --movetime 0 --bookfile ./Titans.bin --infile p` and then just Tab+Tab

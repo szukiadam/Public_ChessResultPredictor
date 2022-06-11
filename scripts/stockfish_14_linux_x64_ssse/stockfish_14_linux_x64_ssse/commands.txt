@@ -1,0 +1,3 @@
+uci \r
+position fen r3kb1r/pp3pq1/1np1b2p/3pP3/3P2p1/2NB2P1/PPQ2PPN/2KR3R w kq - \r
+eval \r

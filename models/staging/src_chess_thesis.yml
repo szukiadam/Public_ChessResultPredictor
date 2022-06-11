@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: chess_thesis
+    tables:
+      - name: fide_players
+        description: One record per chess player. 
+        columns:
+          - name: fide_id
+            description: Unique Fide ID of the player.
+            tests:
+              - unique
+              - not_null
+          - name: gender
+            description: F is the person is female, M if male. 
+            tests: 
+              - accepted_values:
+                    values: ['F', 'M'] 
+
+      - name: stockfish_evaluations
+        description: One record per FEN evaluation. 
+      - name: twicgames
+        description: One record per chess game. 
+      - name: game_positions
+        descriptions: One record per position with all FEN details. 

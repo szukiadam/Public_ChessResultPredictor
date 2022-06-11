@@ -1,0 +1,13 @@
+*.ini
+*.csv
+*.pgn
+pgns/
+env/
+*.json
+logs/
+config/
+*.png
+*.gif
+dbt_packages/
+*.epd
+scripts/src/webscraper.py

@@ -1,0 +1,30 @@
+#!/usr/bin/expect -f
+
+spawn ../stockfish_14_x64_ssse
+
+#expect -timeout 1 Stockfish
+
+send "uci \r"
+
+#expect -timeout 1 readyok
+
+#send "setoption name threads value 4 \r"
+#expect -timeout 1 readyok
+# send "setoption name hash value 1024 \r"
+# send "setoption name MultiPV value 3 \r"
+
+# expect -timeout 1 readyok
+
+send "position fen r3k1r1/2q1bp2/2p4p/4p3/pp2Ppb1/3Q4/BPPR1PP1/4R1NK b q - 1 26 \r"
+
+# expect -timeout 1 readyok
+
+# send "go movetime 1500 nnue multipv 3 \r"
+
+# expect -timeout 15 readyok
+
+send "eval \r"
+
+expect -timeout 2 readyok
+
+# expect eof
